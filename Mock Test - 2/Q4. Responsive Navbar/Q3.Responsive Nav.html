@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="navbar-brand">Logo</span>
+
+    <!-- Hamburger menu -->
+    <div class="hamburger">&#9776;</div>
+
+    <!-- Navbar items -->
+    <ul class="navbar-items">
+      <li class="navbar-item">Home</li>
+      <li class="navbar-item">About</li>
+      <li class="navbar-item">Services</li>
+      <li class="navbar-item">Contact</li>
+    </ul>
+  </nav>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navbarItems = document.querySelector('.navbar-items');
+
+    hamburger.addEventListener('click', function() {
+      navbarItems.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

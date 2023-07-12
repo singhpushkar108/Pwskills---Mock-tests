@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print the Values</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+   <header>Print the Values</header>
+   
+    <main><form action="">
+        <fieldset>
+            <legend>Print the string</legend>
+            <label for="txt">Enter a string:</label>
+            <input type="text" name="txt" id="txt"><br>
+            <div id="result" style="color: firebrick; font-family: fantasy; font-weight: 500; font-size: 30px"></div>
+            <button id="btn">Submit</button><br>
+            
+            
+        </fieldset>
+    </form>
+    <script>
+        document.getElementById("btn").onclick = function() { str(event) };
+        
+        function str(e){
+            e.preventDefault()
+            var str=document.getElementById("txt").value;
+            
+            document.getElementById("result").innerHTML=str;
+        }
+        
+
+        
+    </script>
+    </main>
+</body>
+</html>

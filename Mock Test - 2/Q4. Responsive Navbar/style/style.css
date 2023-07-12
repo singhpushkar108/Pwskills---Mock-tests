@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+      background-color: blueviolet;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .navbar-items {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar-item {
+      margin-right: 10px;
+    }
+
+    /* Hamburger menu styles */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .navbar-items {
+        display: none;
+      }
+
+      .navbar-items.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
